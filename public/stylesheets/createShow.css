@@ -49,7 +49,7 @@ z-index: 0;
   color: #f9f7f6;
   font-size: 22px;
   color: #c69963;
-  margin: 1rem 0;
+  margin: .3rem 0;
 }
 .form div .formLabel {
   font-size: 12px;
@@ -103,7 +103,7 @@ z-index: 0;
   font-weight: 500;
   line-height: inherit;
   transition: 0.3s ease;
-  margin: 12px 0;
+  margin: 4px 0;
 }
 .form-btn {
   outline: none;
@@ -141,17 +141,20 @@ a{
 
 @media screen and (max-width: 620px) {
   .hero-text {
-    width: 80vw;
+    width: 90vw;
   
     padding-left: 1rem;
   }
   .form {
-    padding: 0.5rem;
+    padding: 0 0.5rem;
   }
 
   .form .form-inner-div input,
   .form-btn {
     width: 95%;
+  }
+  .form-btn{
+    margin: .5rem auto;
   }
 }
 @keyframes moveInLeft {

@@ -74,9 +74,18 @@ color: rgba(16, 29, 44, 1);
 }
 @media screen and (max-width: 620px) {
   .hero-text {
-    width: 80vw;
+    width: 75vw;
   }
-
+  .hero-text h1{
+    color: #c69963;
+    font-size: 20px;
+    margin: 0;
+  }
+  .hero-text p {
+font-size: 15px;
+    margin:1px 0 ;
+  }
+}
 @keyframes moveInLeft {
   0% {
     opacity: 0;

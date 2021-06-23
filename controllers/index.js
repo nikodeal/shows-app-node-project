@@ -12,7 +12,7 @@ router.post("/", async (req, res, next) => {
   };
   let bl = await userBL.logUser(userObj);
   try {
-    if (bl.flag) {
+    if (bl.flag == true) {
       req.session["authenticated"] = true;
       
       if (userObj.username == "admin") {

@@ -54,6 +54,10 @@ h1{
   text-transform: capitalize;
   color: rgba(16, 29, 44, 1);
 }
+.user-div div{
+  display: flex;
+  flex-direction: row;
+}
 .user-div div button{
   background: transparent;
   border: none;
@@ -82,9 +86,15 @@ outline: none;
 }
 @media screen and (max-width: 620px) {
   .hero-text {
-    width: 80vw;
+    width: 85vw;
   }
-
+  .hero-text h1{
+    font-size: 20px;
+  }
+  .user-div h3{
+    font-size: 15px;
+  }
+}
 @keyframes moveInLeft {
   0% {
     opacity: 0;

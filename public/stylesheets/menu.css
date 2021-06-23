@@ -136,4 +136,7 @@ a {
   .disabledCardImage{
     width: 3rem;
   }
+  h3{
+    font-size: 15px;
+  }
 }

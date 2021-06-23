@@ -1,1 +1,28 @@
-{"data":[{"id":1,"username":"admin","password":"admin","isAdmin":true},{"id":2,"username":"niko1234","password":"programming","isAdmin":false},{"id":3,"username":"eden","password":"nails","isAdmin":false},{"id":4,"username":"johnnyboy","password":"nails","isAdmin":false},{"id":5,"username":"jimmy","password":"nails","isAdmin":false}]}
+{
+  "data": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "isAdmin": true
+    },
+    {
+      "id": 2,
+      "username": "niko1234",
+      "password": "programming",
+      "isAdmin": false
+    },
+    {
+      "id": 3,
+      "username": "eden",
+      "password": "nails",
+      "isAdmin": false
+    },
+    {
+      "id": 5,
+      "username": "jimmy",
+      "password": "nails",
+      "isAdmin": false
+    }
+  ]
+}

@@ -40,14 +40,14 @@ z-index: 0;
 
 .form {
   flex: 1;
-  padding: 1.5rem;
+  padding: 1rem;
   
 }
 .form h1 {
   
   font-size: 22px;
   color: #c69963;
-  margin: 3rem 0 1.5rem;
+  margin: 1.5rem 0;
 }
 .form div label {
   font-size: 12px;
@@ -89,7 +89,7 @@ z-index: 0;
   text-transform: uppercase;
   cursor: pointer;
   font-size: 13px;
-  margin: 2rem 0;
+  margin: .5rem 0;
 }
 .div-for-toggle {
   width: 30px;

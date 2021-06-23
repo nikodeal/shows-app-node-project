@@ -16,7 +16,7 @@ exports.logUser = async (obj) => {
 
   return {
     flag,
-    id: findUser.id,
+    id: flag ? findUser.id : ''
   };
 };
 

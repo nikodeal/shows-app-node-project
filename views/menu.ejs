@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/menu.css' />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="hero-image">
+    <a href="/" class="back-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-door-closed-fill" viewBox="0 0 16 16">
+      <path d="M12 1a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V2a1 1 0 0 1 1-1h8zm-2 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+    </svg></a>
+    <h3>Transactions left: <%= trans %>
+    </h3>
+    <div class="hero-text">
+      <% if (trans==0) { %>
+        <div class="disabledCard">
+          <p>Create Show</p>
+          <img src="/images/video.png" alt="Avatar" class="disabledCardImage">
+        </div>
+        <div class="disabledCard">
+          <p>Search Shows</p>
+          <img src="/images/search.png" alt="Avatar" class="disabledCardImage">
+        </div>
+        <%} else { %>
+          <a href="/show/create/<%= user %>">
+            <div class="card">
+              <p>Create Show</p>
+              <img src="/images/video.png" alt="Avatar" class="image">
+            </div>
+          </a>
+          <a href="/show/search/<%= user %>">
+            <div class="card">
+              <p>Search Shows</p>
+              <img src="/images/search.png" alt="Avatar" class="image">
+            </div>
+          </a>
+          <% } %>
+            <% if (user==1) { %>
+              </a>
+              <a href="/users/">
+                <div class="card">
+                  <p>Access Users</p>
+                  <img src="/images/user.png" alt="Avatar" class="image">
+                </div>
+              </a>
+              <%} else { %>
+                <p></p>
+                <% } %>
+
+
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>

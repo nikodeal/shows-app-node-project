@@ -1,0 +1,92 @@
+body {
+  font-family: "Nunito", sans-serif;
+  color: #000000;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.hero-image {
+  background-image: linear-gradient(
+    180deg,
+    rgba(16, 29, 44, 0.83),
+    rgba(16, 29, 44, 0.83)
+  ),
+  url(../images/movies.jpeg);
+background-color: #000000;
+margin: -8px;
+width: 100vw;
+height: 100vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+z-index: 0;
+position: relative;
+}
+.hero-text {
+  width: 34rem;
+ 
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ position: relative;
+  border-radius: 10px;
+  z-index: 1;
+  animation: moveInLeft 1s ease-in;
+}
+.hero-text h1{
+  color: #c69963;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+.back-arrow{
+position: absolute;
+top: 15px;
+right: 15px;
+color: #c69963;
+background: transparent;
+border: none;
+outline: none;
+}
+.hero-text div img{
+  max-width: 100%;
+  margin-bottom: -.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.hero-text p {
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+  font-weight: 700;
+  color: rgb(146, 146, 146);
+  margin:7px 0 ;
+}
+.hero-text p span {
+color: rgba(16, 29, 44, 1);
+}
+@media screen and (max-width: 620px) {
+  .hero-text {
+    width: 80vw;
+  }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

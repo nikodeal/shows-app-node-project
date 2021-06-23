@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/search.css' />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="hero-image">
+
+    <div class="hero-text">
+      <form class="form" method="POST" action="/show/search/<%= user %>" >
+        <h1>Search Show</h1>
+        <div class="form-inner-div">
+          <label for="searchName">NAME</label>
+          <br>
+          <input type="text" name="name" id="searchName">
+        </div>
+        <div class="form-inner-div" >
+          <label for="genreSelect">GENRE</label>
+          <br>
+          <select id="genreSelect" name="genre" class="select">
+            
+          </select>
+         
+        </div>
+        <div class="form-inner-div">
+          <label for="langSelect">Language</label>
+          <br>
+          <select id="langSelect" name="language" class="select">
+
+          </select>
+        </div>
+       <div>
+          <label id="error-msg">
+            <%= msg %>
+          </label>
+          <input type="submit" value="Search" class="form-btn" id="form-btn">
+        </div> 
+        <a href="/menu/<%= user %>"><h4>Back to menu</h4></a>
+      </form>
+
+      <div class="div-for-toggle">
+
+      </div>
+       
+    </div>
+
+
+  </div>
+  <script src="/javascripts/search.js"></script>
+</body>
+
+</html>

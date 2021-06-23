@@ -1,0 +1,169 @@
+body {
+  font-family: "Nunito", sans-serif;
+  color: #000000;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.hero-image {
+  background-image: linear-gradient(
+    180deg,
+    rgba(16, 29, 44, 0.83),
+    rgba(16, 29, 44, 0.83)
+  ),
+  url(../images/avengers.jpg);
+background-color: #000000;
+margin: -8px;
+width: 100vw;
+height: 100vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+z-index: 0;
+}
+.hero-text {
+  width: 34rem;
+ 
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-left: 3rem;
+  border-radius: 4px;
+  z-index: 1;
+  animation: moveInLeft 1s ease-in;
+}
+
+.form {
+  flex: 1;
+  padding: 1.5rem;
+  
+}
+.form h1 {
+  color: #101d2c;
+  color: #54483a;
+  color: #f9f7f6;
+  font-size: 22px;
+  color: #c69963;
+  margin: 1rem 0;
+}
+.form div .formLabel {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #54483a;
+}
+.flex-checkbox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 1rem;
+}
+.divForCheckBox{
+ 
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ position: relative;
+}
+.labelForCheckBox{
+  flex: 1;
+  font-size: 12px;
+  font-weight: 500;
+  color: #54483a;
+  text-transform: capitalize;
+}
+.custom_css{
+ position: absolute;
+ right: -40px;
+
+}
+.form .form-inner-div input {
+  outline: none;
+  display: block;
+  background: rgb(236, 236, 236);
+  width: 95%;
+  border: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 12px 10px;
+  color: #c69963;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: inherit;
+  transition: 0.3s ease;
+  margin: 12px 0;
+}
+.form-btn {
+  outline: none;
+  background: #c69963;
+  width: 95%;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 20px;
+  color: white;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 13px;
+  margin: 2rem 0;
+}
+.div-for-toggle {
+  width: 30px;
+  border-radius: 0 4px 4px 0;
+  background: #c69963;
+  direction: rtl;
+}
+.error-msg{
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1;
+  color: red;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+@media screen and (max-width: 620px) {
+  .hero-text {
+    width: 80vw;
+  
+    padding-left: 1rem;
+  }
+  .form {
+    padding: 0.5rem;
+  }
+
+  .form .form-inner-div input,
+  .form-btn {
+    width: 95%;
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

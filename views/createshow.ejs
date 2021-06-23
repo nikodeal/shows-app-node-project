@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/createShow.css' />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="hero-image">
+
+    <div class="hero-text">
+      <form class="form" method="POST" action="/show/create/<%= user %>">
+        <h1>Create New Show</h1>
+        <div class="form-inner-div">
+          <label class="formLabel" for="createMovieName">NAME</label>
+          <br>
+          <input type="text" name="name" id="createMovieName" required>
+        </div>
+        <div class="form-inner-div">
+          <label class="formLabel" for="createMovieLanguage">LANGUAGE</label>
+          <br>
+          <input type="text" name="language" id="createMovieLanguage" required>
+        </div>
+        <div class="form-inner-div">
+          <label class="formLabel" for="createMovieGenres">GENRES</label>
+          <br>
+         
+          <div id='checkBoxParentDiv' class="flex-checkbox">
+     
+          </div>
+        </div>
+
+
+  
+
+    <div>
+      <label id="error-msg">
+        <%= msg %>
+      </label>
+      <input type="submit" value="Add Movie" class="form-btn" id="form-btn">
+    </div>
+
+    <a href="/menu/<%= user %>"><h4>Back to menu</h4></a>
+    </form>
+
+    <div class="div-for-toggle">
+
+    </div>
+    </div>
+
+
+  </div>
+  <script src="/javascripts/createShow.js"></script>
+</body>
+
+</html>

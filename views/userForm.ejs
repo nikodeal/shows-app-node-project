@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/userForm.css' />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  
+</head>
+
+<body>
+
+  <div class="hero-image">
+    <a href="/users/" class="back-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+      fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+      <path
+        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+    </svg></a>
+    <div class="hero-text">
+      <form class="login-form" method="POST" action="/users/<%= formAction %>/<%= user %>" >
+        <h1><%= title %></h1>
+        <div class="form-inner-div">
+          <label for="loginUserName">USERNAME</label>
+          <br>
+          <input type="text" name="username" id="loginUserName" value="<%= info.username %>">
+        </div>
+        <div class="form-inner-div">
+          <label for="loginPassword">PASSWORD</label>
+          <br>
+          <input type="text" name="password" id="loginPassword" value="<%= info.password %>">
+        </div>
+        <div>
+          <label id="error-msg">
+            <%= msg %>
+          </label>
+          <input type="submit" value="<%= btnInfo %>" class="login-form-btn" id="login-form-btn">
+        </div>
+      </form>
+
+      <div class="div-for-toggle">
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

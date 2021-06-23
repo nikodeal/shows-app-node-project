@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/index.css' />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  
+</head>
+
+<body>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <form class="login-form" method="POST" action="/" >
+        <h1>ACCOUNT LOGIN</h1>
+        <div class="form-inner-div">
+          <label for="loginUserName">USERNAME</label>
+          <br>
+          <input type="text" name="username" id="loginUserName">
+        </div>
+        <div class="form-inner-div">
+          <label for="loginPassword">PASSWORD</label>
+          <br>
+          <input type="password" name="password" id="loginPassword">
+        </div>
+        <div>
+          <label id="error-msg">
+            <%= msg %>
+          </label>
+          <input type="submit" value="LOG IN" class="login-form-btn" id="login-form-btn">
+        </div>
+      </form>
+
+      <div class="div-for-toggle">
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

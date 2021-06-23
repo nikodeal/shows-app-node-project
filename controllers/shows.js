@@ -27,7 +27,7 @@ router.get("/create/:userId", async (req, res, next) => {
         req.session.transaction = req.session.transaction-1;
       }
     }
-    res.render("createShow", {
+    res.render("createshow", {
       title: "Create Show",
       msg: "",
       user: req.params.userId,
